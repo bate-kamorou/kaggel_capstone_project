@@ -301,13 +301,13 @@ import asyncio
 # Next steps :
 # 1- observe the agent logs to see it behavior and performance with the built in logging plugin
 # run the agent with different queries
-# async def test_agent():
-#     await run_session(runner, 
-#                         user_queries=["Should I buy an iphone or a google pixel?"], 
-#                         session_name="phone_decision")  
-#     await run_session(runner, 
-#                         user_queries=["what phones am I considering to buy?"], 
-#                         session_name="phone_decision-2") 
+ async def test_agent():
+     await run_session(runner, 
+                         user_queries=["Should I buy an iphone or a google pixel?"], 
+                         session_name="phone_decision")  
+        await run_session(runner, 
+                         user_queries=["what phones am I considering to buy?"], 
+                         session_name="phone_decision-2") 
 
 # if __name__ == "__main__":
 #     asyncio.run(test_agent())
